@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Doughnut Chart</title>
+	<script src="js/Chart.js"></script>
+	<meta name="viewport" content="initial-scale = 1, user-scalable = no">
+	<style>
+		canvas {
+				display:inline-block;
+				width:200px;
+				position:relative;
+			}
+			
+		#eighty-five {
+				display:inline-block;
+				font-size: 60px;
+				position: absolute;
+				top:70px;
+				left:50px;
+				z-index: 100;
+				
+				
+			}
+		
+		#sixty-five {
+				display:inline-block;
+				font-size: 60px;
+				z-index: 100;
+				position:absolute;
+				left: 260px;
+				top:70px;
+	
+		}
+		
+		#combined2 {
+		position:absolute;
+		left:442px;
+		top: 35px;	
+		z-index:100;	
+	
+		}
+		
+	</style>
+
+</head>
+
+<body>
+	<div id="eighty-five">85%</div>
+
+	<canvas id="canvas" height="200" width="200"></canvas>
+
+
+	<script>
+		var doughnutData = [
+				{
+					value: 85,
+					color:"#081aef"
+				},
+				{
+					value: 15,
+					color:"#fff"
+				},
+				
+			
+			];
+			[
+				{
+					value: 85,
+					color:"#081aef"
+				},
+				{
+					value: 15,
+					color:"#fff"
+				},
+				
+			
+			];
+
+	var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+	</script>
+
+	<div id="sixty-five">65%</div>
+
+	<canvas id="canvas2" height="200" width="200"></canvas>
+
+
+	<script>
+		var doughnutData = [
+				{
+					value: 65,
+					color:"#ef0811"
+				},
+				{
+					value: 35,
+					color:"#fff"
+				},
+				
+			
+			];
+
+	var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+	</script>
+
+
+
+
+	<canvas id="combined" height="210" width="210"></canvas>
+
+
+	<script>
+		var doughnutData = [
+				{
+					value: 85,
+					color:"#081aef"
+				},
+				{
+					value: 15,
+					color:"#fff"
+				},
+				
+			
+			];
+
+	var myDoughnut = new Chart(document.getElementById("combined").getContext("2d")).Doughnut(doughnutData);
+	</script>
+
+
+	<canvas id="combined2" height="160" width="160"></canvas>
+
+
+	<script>
+		var doughnutData = [
+				{
+					value: 65,
+					color:"#ef0811"
+				},
+				{
+					value: 35,
+					color:"#fff"
+				},
+				
+			
+			];
+
+	var myDoughnut = new Chart(document.getElementById("combined2").getContext("2d")).Doughnut(doughnutData);
+	</script>
+
+
+
+
+</body>
+
+</html>
