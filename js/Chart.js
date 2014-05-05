@@ -264,10 +264,10 @@ window.Chart = function(context){
 	this.Doughnut = function(data,options){
 	
 		chart.Doughnut.defaults = {
-			segmentShowStroke : false,
-			segmentStrokeColor : "#ffffff",
-			segmentStrokeWidth : 12,
-			percentageInnerCutout : 85,
+			segmentShowStroke : true,
+			segmentStrokeColor : "white",
+			segmentStrokeWidth : 0,
+			percentageInnerCutout : 80,
 			animation : true,
 			animationSteps : 100,
 			animationEasing : "linear",

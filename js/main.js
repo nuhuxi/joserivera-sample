@@ -1,14 +1,24 @@
-		var doughnutData = [
+//this is the function for the chartjs donut charts
+
+function mygraph(elementID, percentGreen, percentWhiteSpace) {
+var doughnutData = [
 				{
-					value: 85,
-					color:"#1ca026"
+					value: percentGreen,
+					color:"#65ad7d"  //color green
 				},
 				{
-					value : 15,
-					color : "#eef2f2"
+					value : percentWhiteSpace,
+					color : "#ffffff"  //color white
 				},
 				
-
 			];
 
-	var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+	var myDoughnut = new Chart(document.getElementById(elementID).getContext("2d")).Doughnut(doughnutData);
+	
+	
+	}
+	
+
+	
+	
+

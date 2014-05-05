@@ -61,11 +61,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-* {
-	outline:1px solid red;
-}
-
-
 body {
 	width: 100%;
 	
@@ -104,9 +99,9 @@ body {
 
 #photo-container {
 	display:inline-block;
-	vertical-align: top;
 	width: 250px;
 	text-align:center;
+	margin-top:15px;
 }
 
 .photo {
@@ -128,38 +123,53 @@ body {
 }
 
 
-canvas {
-	display:inline-block;
-
-}
-
 #graph-container{
 	display:inline-block;
-	width: 300px;
-	vertical-align:top;
-	margin-left: 300px;
+	width: auto;
+	vertical-align: top;
+
 }
 
-#second-graph {
+#first-graph {
+	display:inline-block;
+}
+
+#first-graph img {
 	width:200px;
-	text-align:center;
 }
 
-#second-graph h1 {
-	font-size: 25px;
+#second-graph,
+#third-graph,
+#fourth-graph,
+#fifth-graph {
+	display:inline-block;
+	width:130px;
+	text-align:center;
+	margin-left:60px;
+	margin-right:42px;
+}
+
+#second-graph h1,
+#third-graph h1,
+#fourth-graph h1,
+#fifth-graph h1 {
+	display:inline-block;
+	position:relative;
+	font-size: 23px;
+	top: 92px;
+	left:2px;
 }
 
 
 #button-container {
 	display:inline-block;
 	margin-top: -60px;
-	margin-left: 150px;
 	text-align:center;
 	width: 160px;
 	font-size: 19px;
 	font-family: helvetica, sans-serif;
 	color: grey;
-	
+	margin-left:10px;
 }
 
 #button-container img {
@@ -183,24 +193,19 @@ canvas {
 	font-weight: 300;
 	font-family:arial;
 	margin-top: 20px;
-	
-		
-	
+
 }
 
-button#view-resume:hover, #contact:hover, #hide:hover {
+#view-resume:hover, 
+#contact:hover, 
+#hide:hover {
 	color: #262a8d;
 	box-shadow: 1px 1px 10px #3b32a5;
-	
 }
-
-
-
 
 #jose-wrapper {
 	width: 100%;
 	min-width: 1600px;
-
 }
 
 #jose-example {
@@ -210,14 +215,6 @@ button#view-resume:hover, #contact:hover, #hide:hover {
 	height: 340px;
 	margin:auto;
 }
-
-
-
-
-
-
-
-
 
 
 

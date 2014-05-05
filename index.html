@@ -7,7 +7,7 @@
 	<title></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="js/Chart.js"></script>
+
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
@@ -18,13 +18,11 @@
 </head>
 
 <body>
-	<div id="main-container">
+	<div id="main-container">  <!-- this is the container for the top part of the project -->
 
 		<h2 id="name">José Rivera
 			<span>- Sr UX Designer (Berkeley)</span>
 		</h2>
-
-
 
 		<div id="photo-container">
 			<img class="photo" src="img/josepic2.jpg" alt="picture of jose" />
@@ -33,14 +31,29 @@
 		</div>
 
 		<div id="graph-container">
+			<div id="first-graph">
+				<img src="img/cheater-graph.jpg" alt="donut graph" />
+			</div>
+
 			<div id="second-graph">
 				<h1>85%</h1>
-				<canvas id="canvas" width="120px" height="120px"></canvas>
-				<script src="js/main.js"></script>
+				<canvas id="canvas2" width="120px" height="120px"></canvas>
 			</div>
-		</div>
+			<div id="third-graph">
+				<h1>95%</h1>
+				<canvas id="canvas3" width="120px" height="120px"></canvas>
+			</div>
 
+			<div id="fourth-graph">
+				<h1>84%</h1>
+				<canvas id="canvas4" width="120px" height="120px"></canvas>
+			</div>
 
+			<div id="fifth-graph">
+				<h1>76%</h1>
+				<canvas id="canvas5" width="120px" height="120px"></canvas>
+			</div>
+		</div>  <!-- end of graph-container -->
 
 		<div id="button-container">
 			<img src="img/littlestar.jpg" alt="star" />
@@ -50,23 +63,30 @@
 			<button id="hide">Hide</button>
 		</div>
 
-	</div>
+	</div> <!-- end of main-container -->
 
-
-
+<!-- The Example photo I am trying to Copy is below -->
+	
 	<div id="jose-wrapper">
 		<img id="jose-example" src="img/JoseRiveraSampleScreen.png" alt="jose rivera" />
-	</div>
+	</div> <!-- end of jose-wrapper -->
 
+	<!-- Chartjs Library and functions for graphs -->	
+	<script src="js/Chart.js"></script>
+	<script src="js/main.js"></script>
 
+	<script>
+		mygraph("canvas2", 85, 15);
+		mygraph("canvas3", 95, 5);
+		mygraph("canvas4", 84, 16);
+		mygraph("canvas5", 76, 24);
+	</script>
 
-
-
+	<!-- Jquery below -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')
 	</script>
-
 
 </body>
 
